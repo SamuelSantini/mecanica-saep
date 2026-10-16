@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Veículos</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="clientes.html">Clientes</a>
+    <a href="veiculos.html">Veículos</a>
+    <a href="agendamentos.html">Agendamentos</a>
+    <span><a href="login.html">Sair</a></span>
+  </nav>
+  <main>
+    <h2>Veículos</h2>
+
+    <form id="formulario">
+      <input type="hidden" id="idDoRegistro">
+      <input id="placa" placeholder="Placa" required>
+      <input id="modelo" placeholder="Modelo" required>
+      <input id="ano" type="number" placeholder="Ano" required>
+      <select id="id_cliente" required></select>
+      <button>Salvar</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr><th>Placa</th><th>Modelo</th><th>Ano</th><th>Cliente</th><th>Ações</th></tr>
+      </thead>
+      <tbody id="tabela"></tbody>
+    </table>
+  </main>
+  <script src="js/funcoes.js"></script>
+  <script src="js/veiculos.js"></script>
+</body>
+</html>
